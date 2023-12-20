@@ -6,13 +6,11 @@
 
 li{
   list-style: none;
-
  
 }
 a{
     text-decoration: none;
     color: white;
-  
 }
 
 .mainNav{
@@ -37,28 +35,46 @@ a{
 }
 
 .landNavSectionContainer{
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
-  height: 22rem;
+  height: 22rem; */
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.landNavSectionContainer .r-sect{
+  align-self: center;
+  justify-content: center;
+}
+
+.container{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgSection{
+  display: flex;
+  /* justify-content: flex-start; */
+  /* margin: 0 0 0 10rem; */
+  width: 100%;
+  height: 20rem;
+  border: 1px solid ;
 }
 
 .profileimg{
   /* background-image: url('../img/profile-pic2.png'); */
-  width: 20rem;
+  /* width: 20rem; */
+  width: 100%;
   height: 100%;
   /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.imgSection{
-  display: flex;
-  justify-content: flex-start;
-  margin: 0 0 0 10rem;
-  width: 100%;
-  height: 20rem;
-  border: 1px solid ;
-}
+
 
 .contactCard{
   font-size: 30px;

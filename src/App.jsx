@@ -1,5 +1,4 @@
-import LANDING_SECTION from './views/landingSection'
-// import parallax_pic from './stylesheets/img/images.jpeg'
+import LANDING_NAV_SECTION from "./views/landNavSection"
 
 const App = (props) => {
   return (
@@ -7,17 +6,12 @@ const App = (props) => {
       <div className="appStyle">
       {/* parallax'em */}
 
-    <LANDING_SECTION/>
+    <LANDING_NAV_SECTION/>
 
       <div className='parallax '>
-        {/* <div className='round-logo' >
-      <img width={300}height={400} src={parallax_pic} alt=''/> 
-          </div>  */}
-          
+    
       </div>
-      {/* <div className='parallax '> 
-      <img width={300}height={400} src={parallax_pic} alt=''/> 
-      </div> */}
+    
       <div className='appStyle2'>  </div>
       <div className='parallax'>  </div>
       <div className='appStyle2'>  </div>
