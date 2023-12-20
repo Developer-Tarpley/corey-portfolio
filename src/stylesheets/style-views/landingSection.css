@@ -1,0 +1,12 @@
+.landingHeader{
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:darkcyan;
+    margin-bottom:2rem;
+}
+.title{
+    font-size: 50px;
+    color: cyan;
+}
