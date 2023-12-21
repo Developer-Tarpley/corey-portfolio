@@ -2,6 +2,7 @@ import BEST_CONTACT from "../components/app/Card"
 import profilePic from "../stylesheets/img/profile-pic2.png"
 
 const Landing_Nav_Section = () => {
+
     return (
         <div className="landNavSectionContainer">
             <div className="container">

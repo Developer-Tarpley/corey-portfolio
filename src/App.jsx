@@ -1,25 +1,32 @@
 import LANDING_NAV_SECTION from "./views/landNavSection"
+import ABOUT_ME from "./views/aboutMe";
+import TECH_SKILLS from "./views/techSkills";
+import PROJECTS from "./views/projects";
+import CONTACT from "./views/contact";
 
 const App = (props) => {
   return (
     <>
       <div className="appStyle">
-      {/* parallax'em */}
+        {/* parallax'em */}
 
-    <LANDING_NAV_SECTION/>
+        <LANDING_NAV_SECTION />
 
-      <div className='parallax '>
-    
+        <div className='parallax '></div>
+        <ABOUT_ME />
+
+        <div className='parallax'></div>
+        <TECH_SKILLS />
+
+        <div className='parallax'></div>
+        <PROJECTS />
+
+        <div className='parallax'></div>
+        <CONTACT />
+
       </div>
-    
-      <div className='appStyle2'>  </div>
-      <div className='parallax'>  </div>
-      <div className='appStyle2'>  </div>
-      <div className='parallax'>  </div>
-
-    </div>
     </>
-  
+
   );
 }
 
