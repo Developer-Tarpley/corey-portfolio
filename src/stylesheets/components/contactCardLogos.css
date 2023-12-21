@@ -1,0 +1,93 @@
+
+/* //////////////// phone icon/////////////////// */
+.round-logo-phone{
+    width: 50px; /* Adjust the width and height based on your logo size */
+    height: 50px;
+    border-radius: 50%; /* Makes the element round */
+    display: flex; /* Use flex container for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0 auto; /* Centers the logo container horizontally */
+  
+    /* Silver color for the logo background */
+    background-color: silver;
+  
+    /* 3D effect using box-shadow */
+    box-shadow:
+      0 0 10px rgba(255, 255, 255, 0.8), /* Highlight */
+      0 0 20px rgba(255, 255, 255, 0.5), /* Highlight */
+      0 0 30px rgba(255, 255, 255, 0.3), /* Highlight */
+      0 0 40px rgba(192, 192, 192, 0.6); /* Shadow */
+  
+    /* Add any additional styles you need for your logo */
+  }
+
+  .round-logo-phone .image-logo-phone {
+    max-width: 80%; /* Adjust the maximum width of the logo image */
+    max-height: 80%; /* Adjust the maximum height of the logo image */
+    border-radius: 50%; /* Ensure the logo image is also round */
+  
+    animation: glow 2s infinite alternate; /* Adjust the duration and other parameters as needed */
+  }
+
+  .image-logo-phone{
+    height: 50px;
+    width:50px;
+    color:black;
+    background-color: white;
+  }
+
+  /* ####################################################### */
+  /*  social icons //////////////////////// */
+
+  .round-logo {
+    width: 100px; /* Adjust the width and height based on your logo size */
+    height: 100px;
+    border-radius: 50%; /* Makes the element round */
+    display: flex; /* Use flex container for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0 auto; /* Centers the logo container horizontally */
+  
+    /* Silver color for the logo background */
+    background-color: silver;
+  
+    /* 3D effect using box-shadow */
+    box-shadow:
+      0 0 10px rgba(255, 255, 255, 0.8), /* Highlight */
+      0 0 20px rgba(255, 255, 255, 0.5), /* Highlight */
+      0 0 30px rgba(255, 255, 255, 0.3), /* Highlight */
+      0 0 40px rgba(192, 192, 192, 0.6); /* Shadow */
+  
+    /* Add any additional styles you need for your logo */
+  }
+
+  .image-logo{
+    height: 100px;
+    width:100px;
+    color: aqua;
+    background-color: black;
+  }
+  
+  .round-logo .image-logo {
+    max-width: 80%; /* Adjust the maximum width of the logo image */
+    max-height: 80%; /* Adjust the maximum height of the logo image */
+    border-radius: 50%; /* Ensure the logo image is also round */
+  
+    animation: glow 2s infinite alternate; /* Adjust the duration and other parameters as needed */
+}
+
+.round-logo{margin-left: 30px;}
+.round-logo:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(0, 173, 239, 0.8), 0 0 20px rgba(0, 173, 239, 0.5), 0 0 30px rgba(0, 173, 239, 0.3), 0 0 40px rgba(0, 173, 239, 0.6);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(0, 173, 239, 0.8), 0 0 40px rgba(0, 173, 239, 0.5), 0 0 60px rgba(0, 173, 239, 0.3), 0 0 80px rgba(0, 173, 239, 0.6);
+    }
+  }

@@ -23,5 +23,5 @@ code {
 }
 
 @import './stylesheets/app.css';
-@import './stylesheets/style-views/landingSection.css';
-@import './stylesheets/components/landNavSection.css';
+@import './stylesheets/views-styles/landNavSection.css';
+@import './stylesheets/components/contactCard.css';
