@@ -1,0 +1,14 @@
+ import { IoLogoJavascript as js } from "react-icons/io";
+ import { TiHtml5 as html } from "react-icons/ti";
+ import { TbFileTypeCss as css } from "react-icons/tb";
+ import { SiCreatereactapp as react } from "react-icons/si";
+ import { MdTroubleshoot as tshoot } from "react-icons/md";
+ import { VscDebugConsole as debug } from "react-icons/vsc";
+ import { BsFillTerminalFill as terminal } from "react-icons/bs";
+ import { BiLogoMongodb as mongo } from "react-icons/bi";
+ import { TbApi as api } from "react-icons/tb";
+ import { FaWindows as windows } from "react-icons/fa";
+ import { BsUbuntu as ubuntu } from "react-icons/bs";
+ import { VscGithub as github } from "react-icons/vsc";
+ import { FaNode as node } from "react-icons/fa6";
+ import { SiExpress as express } from "react-icons/si";
