@@ -1,4 +1,5 @@
 @import './views-styles/aboutMe.css';
+@import './views-styles/techSkills.css';
 
 .appStyle {
     background: linear-gradient(black 48%,cyan);
