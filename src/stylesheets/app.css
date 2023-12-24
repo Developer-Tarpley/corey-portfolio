@@ -1,8 +1,11 @@
 @import './views-styles/aboutMe.css';
 @import './views-styles/techSkills.css';
+@import './views-styles/projects.css';
 
 .appStyle {
-    background: linear-gradient(black 48%,cyan);
+    /* background: linear-gradient(black 48%,cyan); */
+    background: linear-gradient(rgb(6, 58, 187),rgb(4, 25, 76) ,black 48%);
+
     display: grid;
     grid-template-areas: "";
     gap: 5;
@@ -11,7 +14,8 @@
 } 
 
 .parallax{
-    background-image: url("./img/dark-hexagonal-background-with-gradient-color_79603-1409.avif");
+    /* background-image: url("./img/dark-hexagonal-background-with-gradient-color_79603-1409.avif"); */
+    background-image: url("./img/bgpic.jpg");
 
     min-height: 40px;
     height: 40px;
@@ -22,10 +26,25 @@
     background-size: cover;
 }
 
-h2{
+/* h2{
   font-size: 100px;
-}
+} */
 
 .landingSections{
   text-align: center; 
+}
+.landingSections h2{
+  font-size: 3rem;
+}
+
+.aboutParallax{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.aboutContainer{
+  width: 80%;
 }

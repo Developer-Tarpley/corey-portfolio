@@ -1,9 +1,11 @@
 .skills {
-    background: radial-gradient(darkcyan 48%, black, black);
+    background: linear-gradient(rgb(6, 58, 187),rgb(4, 25, 76) ,black 48%);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
 .skills h2{
     color:goldenrod;
@@ -11,7 +13,7 @@
 .skills hr{
     height: 20px;
     width: 80%;
-    background-color: darkcyan;
+    
     color: white;
     border-radius: 50%;
 }
@@ -23,21 +25,33 @@
     align-items: center;
 }
 .frontend{
-    border: 3px solid white;
+    border: 3px 3px 0px 3px solid silver;
+    border-radius: 35%;
+    box-shadow: inset silver 5px 5px 3px;
     display: flex;
 
     padding: 10px;
     margin: 3px;
 }
+
+
 .backend{
-    border: 3px solid white;
+    border: 3px 3px 0px 3px solid silver;
+    border-radius: 35%;
+    box-shadow: inset silver -5px 5px 3px;
+
+
     display: flex;
 
     padding: 10px;
     margin: 3px;
 }
 .otherSkills{
-    border: 3px solid white;
+    border: 3px 3px 0px 3px solid silver;
+    border-radius: 35%;
+    box-shadow: inset silver 5px 5px 3px;
+
+
     display: flex;
 
     padding: 10px;
@@ -46,8 +60,8 @@
 
 .sklLogo {
     grid-area: skl;
-    border: 1px solid white;
+    border: 1px solid transparent;
     color: cyan;
     padding: 20px;
-    font-size: 14em;
+    font-size: 7em;
 }
