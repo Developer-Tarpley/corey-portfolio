@@ -1,43 +1,107 @@
-import Form from "../block/form"
+// emailjs.sendForm('service_64zhmng', 'template_qtt7xz6', form.current, 'KvJ8d3Iqq9PyfTHI6')
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+// import styled from "styled-components";
+
+import Form from "../block/form";
 import CFormInputs from "../block/CFormInputs"
-import { NavLink } from "react-router-dom"
 
-const contactMeModal = () => {
+// npm i @emailjs/browser
+
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_64zhmng",
+        "template_qtt7xz6",
+        form.current,
+        "KvJ8d3Iqq9PyfTHI6"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className="modContainer" >
-      <NavLink to={"/"} >GO BACK</NavLink>
-
+    <div className="modContainer">
       <div className="contactFormDiv">
-        <Form className="contactForm" btnText="SEND" >
-          <CFormInputs
-            name="name"
-            type="text"
-            required={true}
-            placeholder="Name goes here"
-          />
-          <CFormInputs
-            name="email"
-            type="email"
-            required={true}
-            placeholder="email goes here"
-          />
-          <CFormInputs
-            name="subject"
-            type="text"
-            required={true}
-            placeholder="subject goes here"
-          />
-          <textarea
-            name="message"
-            type="text"
-            required={true}
-            placeholder="Type Message Here"
-          />
-
-        </Form>
+     <Form btnText="send" className="contactForm" ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <CFormInputs type="text" name="user_name" />
+        <label>Email</label>
+        <CFormInputs type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <CFormInputs type="submit" value="Send" />
+      </Form>
       </div>
+ 
     </div>
-  )
-}
+  );
+};
 
-export default contactMeModal
+export default Contact;
+
+// Styles
+// const StyledContactForm = styled.div`
+//   width: 400px;
+
+//   form {
+//     display: flex;
+//     align-items: flex-start;
+//     flex-direction: column;
+//     width: 100%;
+//     font-size: 16px;
+
+//     input {
+//       width: 100%;
+//       height: 35px;
+//       padding: 7px;
+//       outline: none;
+//       border-radius: 5px;
+//       border: 1px solid rgb(220, 220, 220);
+
+//       &:focus {
+//         border: 2px solid rgba(0, 206, 158, 1);
+//       }
+//     }
+
+//     textarea {
+//       max-width: 100%;
+//       min-width: 100%;
+//       width: 100%;
+//       max-height: 100px;
+//       min-height: 100px;
+//       padding: 7px;
+//       outline: none;
+//       border-radius: 5px;
+//       border: 1px solid rgb(220, 220, 220);
+
+//       &:focus {
+//         border: 2px solid rgba(0, 206, 158, 1);
+//       }
+//     }
+
+//     label {
+//       margin-top: 1rem;
+//     }
+
+//     input[type="submit"] {
+//       margin-top: 2rem;
+//       cursor: pointer;
+//       background: rgb(249, 105, 14);
+//       color: white;
+//       border: none;
+//     }
+//   }
+// `;

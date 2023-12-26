@@ -32,14 +32,14 @@ const Best_Contact = () => {
                     </NavLink>
                 </div>
                 <div>
-                    <a href="/linkedin" className="linkedinLink" >
+                    <a href="https://www.linkedin.com/in/corey-tarpley-592b4129b/" className="linkedinLink" >
                         <div className='round-logo' >
                             <SlSocialLinkedin className='image-logo' />
                         </div>
                     </a>
                 </div>
                 <div>
-                    <a href="/github" className="githubLink" >
+                    <a href="https://github.com/Developer-Tarpley/" className="githubLink" >
                         <div className='round-logo' >
                             <RiGithubLine className="image-logo" />
                         </div>
