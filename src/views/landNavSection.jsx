@@ -1,10 +1,13 @@
+// import { Link } from "react-router-dom"
 import BEST_CONTACT from "../components/app/Card"
 import profilePic from "../stylesheets/img/profile-pic3.png"
 
-const Landing_Nav_Section = () => {
+const Landing_Nav_Section = (props) => {
+    
 
     return (
         <div className="landNavSectionContainer">
+           
             <div className="container">
                 <section className="imgSection l-sect">
                     <img className="profileimg" src={profilePic} alt="" />
@@ -12,10 +15,9 @@ const Landing_Nav_Section = () => {
                 <section className="nav-sect">
                     <nav className="mainNav">
                         <ul>
-                            <a href="/about" ><li className="landNavLi" >ABOUT</li></a>
-                            <a href="/skills" ><li className="landNavLi" >TECH SKILLS</li></a>
-                            <a href="/projects" ><li className="landNavLi" >PROJECTS</li></a>
-                            <a href="/contact" ><li className="landNavLi" >CONTACT</li></a>
+                            <a href="#about" ><li className="landNavLi" >ABOUT</li></a>
+                            <a href="#skills" ><li className="landNavLi" >TECH SKILLS</li></a>
+                            <a href="#projects" ><li className="landNavLi" >PROJECTS</li></a>
                         </ul>
                     </nav>
                 </section>
@@ -28,7 +30,6 @@ const Landing_Nav_Section = () => {
                     <BEST_CONTACT />
                 </div>
             </section>
-
         </div>
     )
 }

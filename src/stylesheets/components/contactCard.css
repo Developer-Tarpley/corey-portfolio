@@ -1,33 +1,32 @@
 @import './contactCardLogos.css';
 
-.contactCard{
-    font-size: 30px;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    /* margin: 0 0 0 2rem; */
-    width:100%;
-  
-  }
+.contactCard {
+  font-size: 30px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+}
 
-  .contactNumber{
-    text-shadow: var(--shadow-glow);
-  }
+.contactNumber {
+  text-shadow: var(--shadow-glow);
+}
 
-  .socialLink{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    padding: 10px;
-  }
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 10px;
+}
 
-  .emailLink{
-    color:black;
-    text-shadow: var(--shadow-glow);
-  }
-  .emailLink:hover{
-    cursor: pointer;
-  }
+.emailLink {
+  color: black;
+  text-shadow: var(--shadow-glow);
+}
+
+.emailLink:hover {
+  cursor: pointer;
+}

@@ -1,45 +1,15 @@
-import LANDING_NAV_SECTION from "./views/landNavSection"
-import ABOUT_ME from "./views/aboutMe";
-import TECH_SKILLS from "./views/techSkills";
-import PROJECTS from "./views/projects";
-// import CONTACT from "./views/contact";
+import ProfileHome from "./views/ProfileHome";
+import { Routes, Route } from "react-router-dom";
+import ContactMeModal from "./components/app/contactMeModal"
+
 
 const App = (props) => {
   return (
-    <>
-      <div className="appStyle">
-        {/* parallax'em */}
-
-        <LANDING_NAV_SECTION />
-
-        <div className='parallax '></div>
-
-        <div className='parallax aboutParallax '>
-          <div className="aboutContainer">
-            <ABOUT_ME />
-          </div>
-        </div>
-
-
-        <div className='parallax'></div>
-
-        <div className='parallax aboutParallax '>
-          <div className="aboutContainer">
-            <TECH_SKILLS />
-          </div>
-        </div>
-
-        <div className='parallax'></div>
        
-        <PROJECTS />
-
-
-        {/* <div className='parallax'></div>
-        <CONTACT /> */}
-
-      </div>
-    </>
-
+        <Routes>
+          <Route path="/" element={ <ProfileHome />} />
+          <Route path="contactMe" element={<ContactMeModal/>} />
+        </Routes>
   );
 }
 

@@ -1,7 +1,10 @@
-const form =()=>{
+const Form =(props)=>{
     return(
-        <form></form>
+        <form onSubmit={props.onSubmit} className={props.className} >
+            {props.children}
+            <button type='submit' >{props.btnText}</button>
+        </form>
     )
 }
 
-export default form
+export default Form

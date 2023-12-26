@@ -7,6 +7,8 @@ import { LiaLessThanSolid, LiaGreaterThanSolid } from "react-icons/lia";
 import { SiGmail } from "react-icons/si";
 import { GiRotaryPhone } from "react-icons/gi";
 
+import { NavLink } from "react-router-dom";
+
 
 const Best_Contact = () => {
     return (
@@ -23,11 +25,11 @@ const Best_Contact = () => {
 
             <div className="socialLink" >
                 <div>
-                    <a href="/contact" className="emailLink" >
+                    <NavLink to="/contactMe" className="emailLink" >
                         <div className="round-logo">
                             <SiGmail className="image-logo" />
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
                 <div>
                     <a href="/linkedin" className="linkedinLink" >
