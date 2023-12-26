@@ -25,3 +25,4 @@ code {
 @import './stylesheets/app.css';
 @import './stylesheets/views-styles/landNavSection.css';
 @import './stylesheets/components/contactCard.css';
+@import './stylesheets/components/contactModal.css';

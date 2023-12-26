@@ -1,0 +1,80 @@
+.modContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: radial-gradient(  blue ,black,  silver ,darkblue, black );
+    color: white;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactFormDiv {
+    border: 1px solid transparent;
+    width: 30%;
+    height: 50%;
+
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 5px blue inset;
+    box-shadow: 2px 2px blue;
+    
+}
+.contactForm input{
+    width: 100%;
+    height: 10%;
+    min-height: 10%;
+    font-size: 16px;
+    background-color: lightgray;
+}
+.contactForm input:focus{
+    background-color: skyblue;
+}
+.contactForm textarea:focus{
+    background-color: skyblue;
+}
+.contactForm  textarea{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 70%;
+    font-size: 24px;
+    background-color: lightgray
+}
+
+.contactForm button{
+    margin-top: 20px;
+    width: 20%;
+    height: 100%;
+    font-size: 20px;
+    background-color: darkblue;
+    color :white;
+    border-color: blue;
+}
+.contactForm button:hover{
+    transform: scale(2);
+    width: 10%;
+    cursor: pointer;
+    background-color: #555;
+    color: skyblue;
+    border-color: skyblue;
+}
+.contactForm button:active{
+    color: white;
+    background-color: darkblue;
+    box-shadow: 0 5px blue;
+    transform: translateY(2px);
+}

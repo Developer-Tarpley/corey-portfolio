@@ -1,38 +1,39 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 15px;
 
+}
 
-.about{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    overflow: hidden;
-    background-color: black;
-    border-radius: 15px;
+.about p {
+  width: 60%;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: whitesmoke;
+}
 
-  }
-  .about p{
-    width: 60%;
-    font-size: 2em;
-    line-height: 1.5em;
-    color:whitesmoke;
-  }
-  .about h2{
-    color: goldenrod;
-  }
-  .about hr{
-    height: 20px;
-    width: 80%;
-  
-    color: white;
-    border-radius: 50%;
-  }
+.about h2 {
+  color: goldenrod;
+}
 
-  .pTagBg{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgb(6, 58, 187),rgb(4, 25, 76) ,black 48%);
+.about hr {
+  height: 20px;
+  width: 80%;
 
-  }
+  color: white;
+  border-radius: 50%;
+}
+
+.pTagBg {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(6, 58, 187), rgb(4, 25, 76), black 48%);
+
+}

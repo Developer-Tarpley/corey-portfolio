@@ -1,40 +1,41 @@
 @import './landingSectionHeader.css';
 
-.landNavSectionContainer{
+.landNavSectionContainer {
   display: flex;
   justify-content: space-evenly;
-  z-index: 100;
+  height: auto;
 }
 
-.container{
+.container {
   width: 40%;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
 
-.imgSection{
+.imgSection {
+  position: relative;
   display: flex;
   width: 100%;
   height: 100%;
- margin-right: 5px;
+  margin-right: 5px;
 }
 
-.profileimg{
+.profileimg {
+  position: relative;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.mainNav{
-  display:flex;
+.mainNav {
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.landNavLi{
+.landNavLi {
   grid-area: navli;
   border: 2px solid transparent;
   box-shadow: var(--shadow-glow);
@@ -45,22 +46,22 @@
   text-align: center;
 }
 
-.landNavLi:hover{
-transform: scale(1.1);
-color: aqua;
+.landNavLi:hover {
+  transform: scale(1.1);
+  color: aqua;
 }
 
-li{
+li {
   list-style: none;
- 
+
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.landNavSectionContainer .r-sect{
+.landNavSectionContainer .r-sect {
   align-self: center;
   justify-content: center;
 }

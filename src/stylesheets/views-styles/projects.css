@@ -1,59 +1,62 @@
-.projects{
-  background: linear-gradient(rgb(6, 58, 187),rgb(4, 25, 76) ,black 48%);
+.projects {
+  background: linear-gradient(rgb(6, 58, 187), rgb(4, 25, 76), black 48%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.projects h2{
+
+.projects h2 {
   color: goldenrod;
 }
-.projects hr{
+
+.projects hr {
   height: 20px;
-    width: 80%;
-    background-color: transparent;
-    color: white;
-    border-radius: 50%;
+  width: 80%;
+  background-color: transparent;
+  color: white;
+  border-radius: 50%;
 }
 
 .projectSection {
-   display: flex;
-   flex-wrap: wrap;
-   width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
 
-   justify-content: center;
-   align-items: center;
-  }
-  
-  .projectsDiv {
-    background-color: rgba(255, 255, 255, 0.8);
-  
-    text-align: center;
-    border: 10px inset goldenrod;
-    min-width: 300px;
-    min-height: fit-content;
-    max-width: 300px;
-    max-height: fit-content;
-    margin: 10px;
-  }
+  justify-content: center;
+  align-items: center;
+}
 
-  .projectsDiv img{
-    max-width: 100%;
-    max-height: 100%;
-  }
+.projectsDiv {
+  background-color: rgba(255, 255, 255, 0.8);
 
-  .viewDiv{
-    width: 100%;
-    text-align: center;
+  text-align: center;
+  border: 10px inset goldenrod;
+  min-width: 300px;
+  min-height: fit-content;
+  max-width: 300px;
+  max-height: fit-content;
+  margin: 10px;
+}
 
-  }
+.projectsDiv img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-  .viewBtn{
-    width: 50%;
-    
-  }
-  .viewBtn:hover{
-    cursor: pointer;
-    color:white;
-    background-color: #555;
-  }
+.viewDiv {
+  width: 100%;
+  text-align: center;
+
+}
+
+.viewBtn {
+  width: 50%;
+
+}
+
+.viewBtn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #555;
+}
